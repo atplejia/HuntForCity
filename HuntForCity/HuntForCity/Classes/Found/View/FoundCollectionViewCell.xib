@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CELLID" id="5fW-RI-YwB" customClass="FoundCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="134"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="003" translatesAutoresizingMaskIntoConstraints="NO" id="SpK-YY-Kxx"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFu-9I-Ras">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="WRU-fF-7dj"/>
+                            <constraint firstAttribute="width" constant="131" id="xsU-Ne-dI3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MC1-AL-wAN">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="hg7-Bb-dGm"/>
+                            <constraint firstAttribute="width" constant="131" id="p9W-wk-S2v"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SpK-YY-Kxx" secondAttribute="trailing" id="JF0-KW-c6B"/>
+                <constraint firstAttribute="bottom" secondItem="SpK-YY-Kxx" secondAttribute="bottom" id="JIs-4t-4rI"/>
+                <constraint firstItem="MC1-AL-wAN" firstAttribute="leading" secondItem="5fW-RI-YwB" secondAttribute="leading" constant="10" id="PWC-Gb-KDT"/>
+                <constraint firstItem="eFu-9I-Ras" firstAttribute="leading" secondItem="5fW-RI-YwB" secondAttribute="leading" constant="8" id="aPa-te-DKY"/>
+                <constraint firstItem="MC1-AL-wAN" firstAttribute="top" secondItem="eFu-9I-Ras" secondAttribute="bottom" constant="7" id="eNs-pQ-Yfd"/>
+                <constraint firstItem="SpK-YY-Kxx" firstAttribute="top" secondItem="5fW-RI-YwB" secondAttribute="top" id="eZG-1X-wUF"/>
+                <constraint firstAttribute="bottom" secondItem="MC1-AL-wAN" secondAttribute="bottom" constant="10" id="fY9-dp-YTB"/>
+                <constraint firstAttribute="trailing" secondItem="MC1-AL-wAN" secondAttribute="trailing" constant="10" id="gtB-C0-cyi"/>
+                <constraint firstItem="SpK-YY-Kxx" firstAttribute="leading" secondItem="5fW-RI-YwB" secondAttribute="leading" id="opY-v9-ylX"/>
+                <constraint firstAttribute="trailing" secondItem="eFu-9I-Ras" secondAttribute="trailing" constant="12" id="yqQ-ZB-XPE"/>
+            </constraints>
+            <size key="customSize" width="151" height="170"/>
+            <connections>
+                <outlet property="backImageView" destination="SpK-YY-Kxx" id="K6O-1D-cDy"/>
+                <outlet property="desLable" destination="MC1-AL-wAN" id="UVt-2e-pa7"/>
+                <outlet property="titleLable" destination="eFu-9I-Ras" id="xip-O3-C3k"/>
+            </connections>
+            <point key="canvasLocation" x="390.5" y="465"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="003" width="720" height="284"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

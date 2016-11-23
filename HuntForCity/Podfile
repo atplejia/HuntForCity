@@ -1,0 +1,14 @@
+use_frameworks!
+platform :ios, "10.0"
+
+target 'HuntForCity' do
+
+pod "MJRefresh"
+pod "MJExtension"
+pod "SDWebImage"
+pod "Masonry"
+pod "AMap2DMap"
+pod "AMapSearch"
+pod "AFNetworking", '~> 3.0'
+
+end

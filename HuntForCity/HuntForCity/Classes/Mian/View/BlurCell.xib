@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="blurCell" id="bbG-1T-c38" customClass="BlurCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2X-QW-y9h">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="9u3-XZ-tgT"/>
+                            <constraint firstAttribute="height" constant="60" id="dgv-bu-Ydk"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="selectView_food">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="国贸康师傅" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDu-Ss-1yU">
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="S2X-QW-y9h" firstAttribute="top" secondItem="bbG-1T-c38" secondAttribute="top" constant="5" id="HaR-A0-hXh"/>
+                <constraint firstAttribute="centerX" secondItem="S2X-QW-y9h" secondAttribute="centerX" id="Wo8-iN-eya"/>
+                <constraint firstAttribute="bottom" secondItem="bDu-Ss-1yU" secondAttribute="bottom" id="c3V-T9-ekh"/>
+                <constraint firstItem="bDu-Ss-1yU" firstAttribute="top" secondItem="S2X-QW-y9h" secondAttribute="bottom" constant="10" id="fYJ-OE-Va5"/>
+                <constraint firstItem="bDu-Ss-1yU" firstAttribute="leading" secondItem="bbG-1T-c38" secondAttribute="leading" id="hfr-fd-Ooi"/>
+                <constraint firstAttribute="trailing" secondItem="bDu-Ss-1yU" secondAttribute="trailing" id="pKd-3z-CZp"/>
+            </constraints>
+            <size key="customSize" width="100" height="115"/>
+            <connections>
+                <outlet property="blurImageView" destination="S2X-QW-y9h" id="ttd-X9-Yqr"/>
+                <outlet property="blurTitleLabel" destination="bDu-Ss-1yU" id="FNz-XY-ayh"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="340"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="selectView_food" width="132" height="132"/>
+    </resources>
+</document>
